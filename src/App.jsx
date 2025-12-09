@@ -14,6 +14,7 @@ import Feedback from "./pages/Feedback";
 import Blog from "./pages/Blog";
 import Privacay from "./pages/Privacay";
 import ScrollToTop from "./components/ScrollToTop";
+import GFR from "./pages/GFR";
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
              <Route path="/feedback" element={<Feedback />} />
                <Route path="/blog" element={<Blog />} />
                  <Route path="/privacy" element={<Privacay />} />
+                 <Route path="/gfr" element={<GFR />} />
       </Routes>
 
       <Footer/>

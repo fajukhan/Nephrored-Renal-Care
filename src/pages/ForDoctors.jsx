@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BannerImg from "../assets/BannerImage1.png"; 
+import BannerImg from "../assets/dt2.webp"; 
 import { FaHeartbeat, FaUsers, FaStethoscope, FaHandHoldingMedical } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
@@ -59,32 +59,33 @@ const ForDoctors = () => {
 
 
 
-      const data = [
-    {
-      id: "01",
-      icon: <FaHeartbeat size={45} />,
-      title: "Achieve Better Clinical Outcomes",
-      text: "We ensure improved clinical outcomes with advanced dialysis protocols and access to patient analytics."
-    },
-    {
-      id: "02",
-      icon: <FaStethoscope size={45} />,
-      title: "Expand Your Patient Reach",
-      text: "Increase your reach across the renal care network and provide dialysis services to more patients."
-    },
-    {
-      id: "03",
-      icon: <FaUsers size={45} />,
-      title: "Leverage Nephrored Renal Care’s Expertise",
-      text: "We manage operations, staffing & upgrades so you can focus entirely on patient care."
-    },
-    {
-      id: "04",
-      icon: <FaHandHoldingMedical size={45} />,
-      title: "Commitment to Quality Treatment",
-      text: "We strictly follow quality standards ensuring patient safety, comfort, and fast recovery."
-    },
-  ];
+ const data = [
+  {
+    id: "01",
+    icon: <FaHeartbeat size={45} />,
+    title: "Achieve Better Clinical Outcomes",
+    text: "Our advanced kidney dialysis protocols and nephrology-led monitoring help in achieving safer and more hygienic dialysis outcomes for every patient."
+  },
+  {
+    id: "02",
+    icon: <FaStethoscope size={45} />,
+    title: "Expand Your Patient Reach",
+    text: "Grow your practice and establish your center as the nearby dialysis center patients trust for reliable and long-term kidney care."
+  },
+  {
+    id: "03",
+    icon: <FaUsers size={45} />,
+    title: "Leverage Nephrored Renal Care’s Expertise",
+    text: "End-to-end management including operations, staffing and tech integration — so doctors can focus only on delivering the best dialysis care."
+  },
+  {
+    id: "04",
+    icon: <FaHandHoldingMedical size={45} />,
+    title: "Commitment to Quality Treatment",
+    text: "We ensure global-standard nephrology practices, sterile environment and patient-first approach — making every dialysis session safe and comfortable."
+  },
+];
+
 
 
 
@@ -92,60 +93,65 @@ const ForDoctors = () => {
   return (
     <div>
 
-        {/* SECTION-1 */}
-          <section
-      className="py-5"
-      style={{
-        backgroundColor:"white",
-        overflow: "hidden",
-      }}
-    >
-      <div className="container">
-        <div className="row align-items-center">
+   {/* SECTION-1 */}
+<section
+  className="py-5"
+  style={{
+    backgroundColor: "white",
+    overflow: "hidden",
+  }}
+>
+  <div className="container">
+    <div className="row align-items-center">
 
-          {/* Left Image Column */}
-          <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-            <div className="image-wrapper">
-              <img
-                src={BannerImg}
-                alt="Partner with Nephrored Renal Care"
-                className="img-fluid rounded-4 section-img"
-              />
-            </div>
-          </div>
-
-          {/* Right Text Column */}
-          <div className="col-lg-6">
-            <h2
-              className="fw-bold mb-4"
-              style={{
-                fontSize: "35px",
-                lineHeight: "1.2",
-                color: "#1F2B6C",
-              }}
-            >
-              Partner with Nephrored Renal Care:
-              <br /> Elevate Dialysis Care in India
-            </h2>
-
-            <p
-              className="text-secondary"
-              style={{
-                fontSize: "17px",
-                lineHeight: "1.7",
-                maxWidth: "90%",
-              }}
-            >
-              We are transforming dialysis care across India by delivering
-              exceptional services and fostering collaborations that drive better
-              outcomes for patients and doctors alike. By partnering with us, you
-              can enhance your practice, expand your reach, and provide
-              unparalleled care to those who need it the most.
-            </p>
-          </div>
+      {/* Left Image Column */}
+      <div className="col-lg-6 mb-4 mb-lg-0 text-center">
+        <div className="image-wrapper">
+          <img
+            src={BannerImg}
+            alt="Best Dialysis Center - Nephrored Renal Care"
+            className="img-fluid rounded-4 section-img"
+          />
         </div>
       </div>
-    </section>
+
+      {/* Right Text Column */}
+      <div className="col-lg-6">
+        <h2
+          className="fw-bold mb-4"
+          style={{
+            fontSize: "35px",
+            lineHeight: "1.2",
+            color: "#1F2B6C",
+          }}
+        >
+          Partner with Nephrored Renal Care:
+          <br /> Elevating Kidney Dialysis & Nephrology Care in India
+        </h2>
+
+        <p
+          className="text-secondary"
+          style={{
+            fontSize: "17px",
+            lineHeight: "1.7",
+            maxWidth: "90%",
+          }}
+        >
+          Nephrored Renal Care is transforming dialysis treatment across India
+          with modern technology, hygienic dialysis practices and expert
+          <b> nephrology-driven kidney care</b>. As one of the
+          <b> best dialysis centers</b> in India, we enable doctors and hospitals
+          to expand their reach and deliver safe and comfortable
+          <b> kidney dialysis</b> to every patient. Partnering with us helps
+          you build a <b>nearby dialysis center</b> experience patients trust —
+          backed by compassionate care, clinical excellence and long-term outcomes.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
     {/* SECTION-2 */}

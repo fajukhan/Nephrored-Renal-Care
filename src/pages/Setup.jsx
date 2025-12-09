@@ -253,13 +253,19 @@ const Setup = () => {
    <section className="setup-section py-5">
       <div className="container">
 
-        <div className="text-center mb-5" data-aos="fade-up">
-          <p className="top-subtitle">HOW DO WE DO IT?</p>
-          <h2 className="main-heading">
-            Hassle Free <span>END-TO-END</span>
-          </h2>
-          <p className="bottom-subtitle">SPENDS & MANAGEMENT OF THE CENTER</p>
-        </div>
+       <div className="text-center mb-5" data-aos="fade-up">
+  <p className="top-subtitle">HOW DO WE DO IT?</p>
+  <h2 className="main-heading">
+    Hassle Free <span>END-TO-END</span>
+  </h2>
+  <p className="">
+    SPENDS & MANAGEMENT OF THE CENTER — Designed for hospitals and nephrologists looking to build a
+    <b> hygienic dialysis unit</b> with complete operational support and the highest standards of
+    <b> kidney dialysis</b> & <b> nephrology-based kidney care</b>. This process helps hospitals
+    become the <b>best dialysis center</b> in their region and attract more patients searching
+    for a <b>nearby dialysis center</b> they can trust.
+  </p>
+</div>
 
         {/* Row 1 */}
         <div className="row g-4 mb-4">

@@ -53,10 +53,10 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h5 className="fw-semibold mb-3">Follow Us</h5>
             <ul className="list-unstyled d-flex gap-3">
-              <li><a href="#" className="social"><FaFacebookF size={20} /></a></li>
+              <li><a href="https://www.facebook.com/share/17B3yHfwwZ" className="social"><FaFacebookF size={20} /></a></li>
               <li><a href="#" className="social"><FaYoutube size={20} /></a></li>
               <li><a href="#" className="social"><FaLinkedinIn size={20} /></a></li>
-              <li><a href="#" className="social"><FaInstagram size={20} /></a></li>
+              <li><a href="https://www.instagram.com/nephroredrenalcarepvtltd?igsh=OGxvbTl3MmN4M2lr" className="social"><FaInstagram size={20} /></a></li>
             </ul>
 
             <ul className="list-unstyled mt-4">

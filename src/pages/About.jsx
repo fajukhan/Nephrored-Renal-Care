@@ -1,14 +1,14 @@
 import React, { useState, useEffect ,  useRef } from "react";
-import doctorImg from "../assets/i0629.jpg";
-import whyImg from "../assets/We us.png";
+import doctorImg from "../assets/dd45.webp";
+import whyImg from "../assets/dt10.jpeg";
 import { FaUserMd, FaHospitalAlt, FaUserFriends, FaStethoscope } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import vite1 from "../assets/vite1.png";
-import vite2 from "../assets/vite2.png";
-import vite3 from "../assets/vite3.png";
-import vite4 from "../assets/vite4.png";
-import vite5 from "../assets/vite5.png";
+import vite1 from "../assets/dt8.jpg";
+import vite2 from "../assets/dt7.jpg";
+import vite3 from "../assets/dt3.jpg";
+import vite4 from "../assets/dt1.jpg";
+import vite5 from "../assets/dt4.jpg";
 import { FaExpand } from "react-icons/fa";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -100,71 +100,81 @@ const About = () => {
     </section>
 
 
-  {/* //  SECTION-2 */}
-  <section className="why-section py-5">
-      <div className="container">
-        <h2 className="text-center why-title mb-5">Why Choose Us</h2>
-        <div className="row align-items-center">
+{/* //  SECTION-2 */}
+<section className="why-section py-5">
+  <div className="container">
+    <h2 className="text-center why-title mb-5">
+      Why Choose Us
+    </h2>
+    <div className="row align-items-center">
 
-          {/* Left Image */}
-          <div className="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
-            <img src={whyImg} alt="Why choose Nephrored Renal Care" className="img-fluid why-img" />
+      {/* Left Image */}
+      <div className="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
+        <img
+          src={whyImg}
+          alt="Why choose Nephrored Renal Care"
+          className="img-fluid why-img"
+        />
+      </div>
+
+      {/* Right Cards */}
+      <div className="col-lg-7 col-md-12">
+        <div className="row g-4">
+
+          <div className="col-md-6">
+            <div className="why-card">
+              <FaUserMd className="why-icon" />
+              <h4>Experienced Nephrology Professionals</h4>
+              <p>
+                Our nephrologists and dialysis experts ensure safe and
+                personalised <b>kidney dialysis</b> making us one of the
+                <b> best dialysis centers</b> for patients seeking long-term renal care.
+              </p>
+            </div>
           </div>
 
-          {/* Right Cards */}
-          <div className="col-lg-7 col-md-12">
-            <div className="row g-4">
+          <div className="col-md-6">
+            <div className="why-card">
+              <FaHospitalAlt className="why-icon" />
+              <h4>Comprehensive Kidney Care Services</h4>
+              <p>
+                From CRRT and SLED to plasmapheresis and blood transfusion,
+                we offer complete <b>kidney care</b> under one roof ensuring patients
+                don’t need to travel across multiple facilities.
+              </p>
+            </div>
+          </div>
 
-              <div className="col-md-6">
-                <div className="why-card">
-                  <FaUserMd className="why-icon" />
-                  <h4>Experienced Medical Professionals</h4>
-                  <p>
-                    Our team consists of highly skilled specialists in hemodialysis
-                    delivering personalized care in a safe and supportive environment.
-                  </p>
-                </div>
-              </div>
+          <div className="col-md-6">
+            <div className="why-card">
+              <FaUserFriends className="why-icon" />
+              <h4>Patient-Focused Treatment</h4>
+              <p>
+                We ensure every patient gets a comfortable and
+                hygienic dialysis experience in a supportive environment — making
+                us a trusted <b>nearby dialysis center</b> for families across India.
+              </p>
+            </div>
+          </div>
 
-              <div className="col-md-6">
-                <div className="why-card">
-                  <FaHospitalAlt className="why-icon" />
-                  <h4>Comprehensive Services</h4>
-                  <p>
-                    We provide CRRT dialysis, SLED, Plasmapheresis, blood transfusion
-                    and access creation for holistic renal care.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <div className="why-card">
-                  <FaUserFriends className="why-icon" />
-                  <h4>Patient-centered Approach</h4>
-                  <p>
-                    We listen to patient needs and provide tailored treatment
-                    ensuring comfort, empathy and quality of life.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <div className="why-card">
-                  <FaStethoscope className="why-icon" />
-                  <h4>State-of-the-art Facilities</h4>
-                  <p>
-                    Equipped with advanced technology to deliver top-quality
-                    hemodialysis in a clean, patient-friendly environment.
-                  </p>
-                </div>
-              </div>
-
+          <div className="col-md-6">
+            <div className="why-card">
+              <FaStethoscope className="why-icon" />
+              <h4>Advanced and Hygienic Dialysis Facilities</h4>
+              <p>
+                Our centers use modern machines and follow strict infection-control
+                protocols to deliver <b>hygenic dialysis</b> with world-class care and
+                long-term patient safety.
+              </p>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
 
 
 {/* SECTION-3 */}

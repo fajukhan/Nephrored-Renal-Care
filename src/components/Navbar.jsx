@@ -102,7 +102,7 @@ const Navbar = () => {
         <div className="mt-5">
           <button className="phone-btn w-100 d-flex align-items-center justify-content-center gap-2 mb-3">
             <FaPhoneAlt size={16} />
-            <span>98628 98628</span>
+            <span>9602515835</span>
           </button>
           
           <Link to="find" className="neon-btn small d-flex justify-content-center align-items-center text-decoration-none" onClick={toggleSidebar}>
