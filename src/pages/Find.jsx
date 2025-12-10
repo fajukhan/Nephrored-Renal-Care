@@ -34,16 +34,16 @@ const Find = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10" data-aos="zoom-in-up">
             <div className="map-wrapper shadow-lg">
-              <iframe
-                title="map"
-                width="100%"
-                height="420"
-                style={{ border: 0 }}
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22480.32887417344!2d77.20902101!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4c6b1477cd%3A0xe17b6c6e8f90e032!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1700142892104!5m2!1sen!2sin"
-              ></iframe>
+          <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.643682935076!2d75.1612109!3d27.6045745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cbb4c15bd31cd%3A0xb7fd2d76e12ec2b6!2sVsnt%20vihar!5e0!3m2!1sen!2sin!4v1765334922336!5m2!1sen!2sin"
+  width="1075"
+  height="450"
+  style={{ border: "0" }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
             </div>
           </div>
         </div>

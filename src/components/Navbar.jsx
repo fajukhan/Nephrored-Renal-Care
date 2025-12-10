@@ -52,11 +52,11 @@ const Navbar = () => {
             {/* Phone + Red Button - Hidden on mobile */}
             <div className="d-none d-lg-flex align-items-center gap-3">
                 <a
-    href="tel:9478100624"
+    href="tel:9602515835"
     className="phone-btn d-flex align-items-center gap-2 text-decoration-none footer-link1"
   >
     <FaPhoneAlt size={16} />
-    <span>9478100624</span>
+    <span>9602515835</span>
   </a>
 
               {/* Neon Button */}

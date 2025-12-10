@@ -620,7 +620,7 @@ const Home = () => {
 <section className="stats-section py-5" ref={sectionRef}>
   <div className="container">
     <div className="stats-box mx-auto p-5">
-      <div className="row text-center justify-content-around align-items-center">
+      <div className="row text-center justify-content-between align-items-center">
 
 
         {/* 1️⃣ Operational Centres */}
@@ -638,13 +638,13 @@ const Home = () => {
         {/* 3️⃣ Sessions Completed */}
         <div className="col-md-3 mb-4 mb-md-0">
           <h2 className="stat-number count" data-target="260565">0</h2>
-          <p className="stat-title m-0">Sessions Completed (Till Nov 2025)</p>
+          <p className="stat-title m-0 ms-5">Sessions Completed (Till Nov 2025)</p>
         </div>
 
         {/* 4️⃣ Active Patients */}
         <div className="col-md-3">
           <h2 className="stat-number count" data-target="3567">0</h2>
-          <p className="stat-title m-0">Active Patients</p>
+          <p className="stat-title m-0 ms-5">Active Patients</p>
         </div>
 
       </div>

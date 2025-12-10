@@ -22,10 +22,10 @@ const Footer = () => {
             <ul className="list-unstyled mt-3">
               <li className="mb-2 d-flex align-items-center footer-link gap-2"><FaMapMarkerAlt /> Plot No. 01 Naruka Colony Basant Vihar Sikar (Raj.) 332001</li>
              <a
-  href="tel:9478100624"
+  href="tel:9602515835"
   className="mb-2 d-flex align-items-center footer-link my-3 gap-2"
 >
-  <FaPhoneAlt /> 9478100624
+  <FaPhoneAlt />9602515835
 </a>
 
 <a
@@ -54,7 +54,7 @@ const Footer = () => {
             <h5 className="fw-semibold mb-3">Follow Us</h5>
             <ul className="list-unstyled d-flex gap-3">
               <li><a href="https://www.facebook.com/share/17B3yHfwwZ" className="social"><FaFacebookF size={20} /></a></li>
-              <li><a href="#" className="social"><FaYoutube size={20} /></a></li>
+              <li><a href="https://youtube.com/@kidneyhealthgyan?si=G3stRY7BFhPmOXDy" className="social"><FaYoutube size={20} /></a></li>
               <li><a href="#" className="social"><FaLinkedinIn size={20} /></a></li>
               <li><a href="https://www.instagram.com/nephroredrenalcarepvtltd?igsh=OGxvbTl3MmN4M2lr" className="social"><FaInstagram size={20} /></a></li>
             </ul>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* WhatsApp Button */}
-        <a href="https://wa.me/9478100624"
+        <a href="https://wa.me/9602515835"
           target="_blank"
           rel="noopener noreferrer"
           className="position-fixed bottom-0 end-0 m-3 btn btn-success rounded-circle p-3 whatsapp-btn">

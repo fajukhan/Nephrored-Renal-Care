@@ -187,11 +187,10 @@ const About = () => {
             A message from our Founder
           </h2>
 
-          <div className="video-container">
+        <div className="video-container">
   <iframe
-    src="https://www.youtube.com/embed/KZ4NJok8-vY"
-    title="Our Founder's Message"
-    frameBorder="0"
+    src="https://www.youtube.com/embed/puuWN-xdVM0?si=wAjBPSkVJbSDboL6"
+    title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerPolicy="strict-origin-when-cross-origin"
     allowFullScreen
