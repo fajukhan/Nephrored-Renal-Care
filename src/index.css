@@ -337,34 +337,47 @@
   text-align: center;
 }
 
+/* Numbers */
 .stat-number {
   color: #19314A;
-  font-size: 54px;        /* Bigger for premium look */
+  font-size: 54px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
+/* Titles */
 .stat-title {
   color: #11324B;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 23px;
-  max-width: 190px;
-  margin: auto;           /* center under number */
+  max-width: 300px;
+  margin: 0 auto;
+
 }
 
-/* Hover effect for premium design */
-.stats-box .col-md-2,
+/* Hover effect */
+.stats-box .col-6,
 .stats-box .col-md-3 {
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
-.stats-box .col-md-2:hover,
+
+.stats-box .col-6:hover,
 .stats-box .col-md-3:hover {
   transform: translateY(-6px);
 }
 
+/* ===== Medium Screens (Tablets <992px) ===== */
+@media (max-width: 992px) {
+  .stat-number {
+    font-size: 44px;
+  }
+  .stat-title {
+    font-size: 16px;
+  }
+}
 
-/* ===== 🔥 Only for Small Screens (Mobile <576px) ===== */
+/* ===== Mobile (<576px) ===== */
 @media (max-width: 576px) {
   .stats-box {
     padding: 25px 18px;
@@ -377,14 +390,25 @@
   }
 
   .stat-title {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 18px;
   }
 
-  .stats-section .row > div {
-    margin-bottom: 20px;
+  .row.g-4 > div {
+    margin-bottom: 15px;
   }
 }
+
+@media (max-width: 576px) {
+  .stats-section .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
 
 
 
@@ -596,10 +620,11 @@
 }
 
 
+
 /* Section-5 */
 .section5-wrapper {
   background: #f8faff;
-  height: 500px;
+  padding: 60px 0;          /* FIX: height remove, spacing perfect */
 }
 
 .section5-title {
@@ -608,6 +633,7 @@
   color: #222b62;
 }
 
+/* Service Card */
 .service-card {
   background: #fff;
   border-radius: 26px;
@@ -617,6 +643,7 @@
   transition: 0.35s ease;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   border: 2px solid transparent;
+  height: 100%;             /* FIX: equal height for all cards */
 }
 
 .service-card .service-icon svg {
@@ -631,7 +658,7 @@
   transition: 0.35s;
 }
 
-/* === Hover / Active Effect === */
+/* Hover/Active */
 .service-card.active,
 .service-card:hover {
   background: #222b62;
@@ -650,20 +677,43 @@
   color: #ffffff;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Medium Screens (tablets) */
+@media (max-width: 992px) {
   .section5-title {
-    font-size: 34px;
+    font-size: 38px;
   }
   .service-card {
-    padding: 35px 18px;
+    padding: 38px 22px;
   }
 }
+
+/* Mobile Screens (sm < 576px) */
+@media (max-width: 576px) {
+  .section5-wrapper {
+    padding: 40px 15px;     /* FIX: section spacing perfect */
+  }
+
+  .section5-title {
+    font-size: 30px;
+    margin-bottom: 30px;    /* FIX: title gap */
+  }
+
+  .service-card {
+    padding: 28px 18px;
+    margin-bottom: 20px;    /* FIX: each card spacing */
+  }
+}
+
+
+
+
+
 
 
 /* Section-6 */
 .news-wrapper {
   background: #f7faff;
+  padding: 80px 0; /* section height improve */
 }
 
 .news-title {
@@ -672,40 +722,45 @@
   color: #222b62;
 }
 
+/* Updated Bigger, Cleaner Card */
 .news-card {
   background: #fff;
   border-radius: 25px;
-  min-height: 220px;
+  min-height: 260px; /* height increase */
   border: 2px solid transparent;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.06);
   transition: 0.35s ease;
   cursor: pointer;
+  padding: 28px; /* more spacing */
 }
+
 .news-card:hover {
   transform: translateY(-6px);
   border-color: #222b62;
 }
 
+/* Bigger Image Box */
 .news-img-box {
   border: 4px solid #222b62;
   border-radius: 18px;
-  padding: 14px;
-  width: 130px;
+  padding: 18px; /* increased */
+  width: 160px; /* bigger box */
   display: flex;
   justify-content: center;
   background: #fff;
 }
 
 .news-img-box img {
-  width: 90px;
+  width: 120px; /* bigger image */
   height: auto;
 }
 
+/* Text Styling Adjust */
 .news-text {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   color: #cf1d1d;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 /* Pagination dots */
@@ -719,6 +774,53 @@
 .carousel-indicators .active {
   background: #0a4fd3;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .news-img-box {
+    width: 150px;
+  }
+  .news-img-box img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-card {
+    min-height: 240px;
+    padding: 24px;
+  }
+  .news-img-box {
+    width: 130px;
+    padding: 14px;
+  }
+  .news-img-box img {
+    width: 95px;
+  }
+  .news-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-card {
+    flex-direction: column;
+    text-align: center;
+    min-height: 300px;
+    gap: 18px;
+  }
+  .news-img-box {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /* SECTION-7 */
@@ -982,6 +1084,9 @@
 }
 
 
+
+
+
 /* ABOUT SECTION-1 */
 .about-section {
   background: url("../assets/hero-bg.png") no-repeat center/cover;
@@ -991,30 +1096,50 @@
   align-items: center;
 }
 
+/* IMAGE FIX (FINAL PERFECT VERSION) */
 .about-img {
-  width: 81%;
-  height: 590px;              /* Desktop par perfect height */
-  object-fit: top;
+  width: 100%;
+  height: 100%;
+  max-height: 550px;      /* Desktop image limit */
+  object-fit: cover;      /* Perfect fit inside box */
+  object-position: top;   /* Doctor face proper visible */
   border-radius: 18px;
   border: 4px solid #ffffff;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Hover effect for professional look */
+/* Hover effect */
 .about-img:hover {
   transform: scale(1.03);
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.18);
 }
 
-/* Mobile view adjustments */
+/* TABLET VIEW */
+@media (max-width: 991px) {
+  .about-img {
+    max-height: 420px;
+  }
+}
+
+/* MOBILE VIEW */
 @media (max-width: 768px) {
   .about-img {
-    height: 350px;
+    max-height: 350px;
     border-radius: 14px;
   }
 }
 
+/* EXTRA SMALL SCREEN */
+@media (max-width: 576px) {
+  .about-img {
+    max-height: 300px;
+    width: 100%;
+  }
+}
+
+
+/* TEXT */
 .about-title {
   font-size: 42px;
   font-weight: 700;
@@ -1026,11 +1151,11 @@
   font-size: 20px;
   font-weight: 500;
   color: #d62828;
-  transition: all 0.4s ease-in-out;
-  min-height: 26px; /* avoids layout jump while typing */
+  min-height: 26px;
+  transition: 0.4s ease;
 }
 
-/* Responsive */
+/* Responsive Text */
 @media (max-width: 768px) {
   .about-title {
     font-size: 32px;
@@ -1041,12 +1166,9 @@
   .about-para {
     text-align: center;
   }
-
-  .about-img {
-    margin-bottom: 20px;
-  }
 }
 
+/* Cursor blinking animation */
 .about-para::after {
   content: "|";
   margin-left: 5px;
@@ -1058,7 +1180,6 @@
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
-
 
 
 
@@ -1210,8 +1331,6 @@
 
 
 
-
-
 /* Section-4 */
 .facilities-section {
   background: #ffffff;
@@ -1223,44 +1342,72 @@
   color: #273c75;
 }
 
-/* Card */
+/* Facility Card */
 .facility-card {
   position: relative;
   overflow: hidden;
   border-radius: 14px;
   cursor: pointer;
+  width: 100%;
   height: 100%;
+  display: block;
 }
 
-/* Image Layout Heights */
-.large-h img {
-  height: 240px;
-  object-fit: cover;
-}
-
-.extra-large-h img {
-  height: 500px;
-  object-fit: cover;
-}
-
-.wide-h img {
-  height: 280px;
-  object-fit: cover;
-}
-
-.wide-small-h img {
-  height: 280px;
-  object-fit: cover;
-}
-
-/* Image styling */
+/* Image always fits perfectly */
 .facility-card img {
   width: 100%;
+  height: 100%;
+  object-fit: top;
   transition: 0.45s ease;
   border-radius: 14px;
 }
 
-/* Hover Overlay Effect */
+/* Fixed Height Layout For Desktop */
+.large-h {
+  height: 240px;
+}
+
+.extra-large-h {
+  height: 500px;
+}
+
+.wide-h {
+  height: 280px;
+}
+
+.wide-small-h {
+  height: 280px;
+}
+
+/* Responsive Height Fix for Tablets & Mobile */
+@media (max-width: 991px) {
+  .large-h,
+  .extra-large-h,
+  .wide-h,
+  .wide-small-h {
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .large-h,
+  .extra-large-h,
+  .wide-h,
+  .wide-small-h {
+    height: 180px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .large-h,
+  .extra-large-h,
+  .wide-h,
+  .wide-small-h {
+    height: 160px !important;
+  }
+}
+
+/* Hover Overlay */
 .facility-card::after {
   content: "";
   position: absolute;
@@ -1270,7 +1417,7 @@
   transition: 0.45s ease;
 }
 
-/* Zoom on hover */
+/* Hover Effects */
 .facility-card:hover img {
   transform: scale(1.06);
   filter: brightness(80%);
@@ -1297,6 +1444,19 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.15);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Carrer.jsx file css */

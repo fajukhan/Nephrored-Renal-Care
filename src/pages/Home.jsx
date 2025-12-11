@@ -22,12 +22,16 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import { FaHospitalUser } from "react-icons/fa";
 import { MdHealthAndSafety } from "react-icons/md";
-import betterIndia from "../assets/betterIndia.svg";
-import toi from "../assets/toi.png";
-import zeeNews from "../assets/zeeNews.avif";
-import etNow from "../assets/et-now.svg";
+import img7 from "../assets/img7.jpeg";
+import img6 from "../assets/img6.jpeg";
+import img8 from "../assets/img8.jpeg";
+import img9 from "../assets/img9.jpeg";
 import * as bootstrap from "bootstrap";
-import news18 from "../assets/news18.png";
+import img10 from "../assets/img10.jpeg";
+import img11 from "../assets/img11.jpeg";
+import img12 from "../assets/img12.jpeg";
+import img13 from "../assets/img13.jpeg";
+import img14 from "../assets/img14.jpeg";
 import ytIcon from "../assets/symbol.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
@@ -143,166 +147,79 @@ const faqData = [
 
 const testimonials = [
   {
-    name: "ANKIT",
-    place: "Panipat",
+    name: "AANYA",
+    place: "",
     review:
-      "I like that they have flexible timings for sessions. It helps me to come when I am free.",
+      "My experience with the dialysis unit of Neerja hospital was very good as my mother was suffering from CKD. The team helped us a lot.",
     stars: 5,
-    lang: "eng",
   },
   {
-    name: "BALJINDER",
-    place: "Bathinda",
+    name: "VISHAL",
+    place: "",
     review:
-      "The technicians are very good. They know how to do everything right, and I feel safe.",
+      "I am taking continuous dialysis sessions at Balaji Hospital, Sikar. The staff is well experienced.",
     stars: 5,
-    lang: "eng",
   },
   {
-    name: "VIJAY",
-    place: "Delhi",
+    name: "Rahul",
+    place: "",
     review:
-      "The staff is highly trained and supportive. They guide very well throughout the treatment.",
+      "Great experience with the team. Also the unit is very hygienic. Fully satisfied.",
     stars: 5,
-    lang: "eng",
   },
   {
-    name: "KARAN",
-    place: "Chandigarh",
+    name: "Anita",
+    place: "",
     review:
-      "My dialysis experience has become very smooth because of Nephrored Renal Care.",
+      "At previous hospital in winters I used to have breathing problems, but after taking sessions in Petamed Hospital, Sikar now I am feeling very healthy and confident. Thank you team, you guys are doing a great job.",
     stars: 5,
-    lang: "eng",
-  },
-  {
-    name: "RAHUL",
-    place: "Haryana",
-    review: "Clean centre and cooperative doctors. Highly recommended.",
-    stars: 5,
-    lang: "eng",
-  },
-  {
-    name: "SUMIT",
-    place: "Punjab",
-    review: "Best dialysis care so far. Treatment feels safe and comfortable.",
-    stars: 5,
-    lang: "eng",
-  },
-  // Hindi testimonials
-  {
-    name: "ARJUN",
-    place: "Delhi",
-    review:
-      "यहाँ के डॉक्टर और स्टाफ बहुत अच्छे हैं। मुझे यहाँ पूरी सुरक्षा महसूस होती है।",
-    stars: 5,
-    lang: "hin",
-  },
-  {
-    name: "SUNIL",
-    place: "Panipat",
-    review:
-      "डायलिसिस का समय बहुत सुविधाजनक है। मेरे खाली समय में आना आसान होता है।",
-    stars: 5,
-    lang: "hin",
-  },
-  {
-    name: "MAHESH",
-    place: "Haryana",
-    review: "इलाज के दौरान पूरा स्टाफ सहयोग करता है। मैं पूरी तरह संतुष्ट हूँ।",
-    stars: 5,
-    lang: "hin",
-  },
-  {
-    name: "AMIT",
-    place: "Punjab",
-    review: "विटसकेयर के कारण डायलिसिस अनुभव काफी आसान और सुरक्षित हो गया है।",
-    stars: 5,
-    lang: "hin",
-  },
-  {
-    name: "SANJAY",
-    place: "Ludhiana",
-    review: "सेंटर साफ-सुथरा है और मशीनें आधुनिक हैं। बेहतरीन सेवा।",
-    stars: 5,
-    lang: "hin",
-  },
-  {
-    name: "MUKESH",
-    place: "Hisar",
-    review: "यहाँ पर इलाज अच्छा है और डॉक्टर हर चीज समझाते हैं।",
-    stars: 5,
-    lang: "hin",
   },
 ];
 
+
+
+
 const newsData = [
   {
-    img: betterIndia,
-    text: "Changing Dialysis Care & Making It More Easily Available",
+    img: img6,
+    text: "NEERJA HOSPITAL, Bagrang Kanta, Sikar",
   },
   {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
-  },
-  { img: zeeNews, text: "Top 3 ways to improve kidney health" },
-  {
-    img: etNow,
-    text: "Nephrored Renal Care partners with ET Now for kidney awareness",
+    img: img7,
+    text: "BALAJI HOSPITAL, Piprali Road, Sikar",
   },
   {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
+    img: img8,
+    text: "MANAVATA HOSPITAL, Todi Nagar, Sikar",
   },
   {
-    img: news18,
-    text: "News18 covers Nephrored Renal Care dialysis advancement",
+    img: img9,
+    text: "K.R. MEMORIAL HOSPITAL, Chomu",
   },
   {
-    img: betterIndia,
-    text: "Changing Dialysis Care & Making It More Easily Available",
+    img: img10,
+    text: "BALAJI CURE & CARE HOSPITAL Sirsi Road , Jaipur",
   },
   {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
-  },
-  { img: zeeNews, text: "Top 3 ways to improve kidney health" },
-  {
-    img: etNow,
-    text: "Nephrored Renal Care partners with ET Now for kidney awareness",
+    img: img11,
+    text: "TAGORE HOSPITAL Jaipur",
   },
   {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
+    img: img12,
+    text: "PRIYA HOSPITAL Baran",
   },
-  {
-    img: news18,
-    text: "News18 covers Nephrored Renal Care dialysis advancement",
+
+    {
+    img: img13,
+    text: "CKRDM HOSPITAL Jhunjhunu",
   },
-  {
-    img: etNow,
-    text: "Nephrored Renal Care partners with ET Now for kidney awareness",
-  },
-  {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
-  },
-  {
-    img: news18,
-    text: "News18 covers Nephrored Renal Care dialysis advancement",
-  },
-  {
-    img: etNow,
-    text: "Nephrored Renal Care partners with ET Now for kidney awareness",
-  },
-  {
-    img: toi,
-    text: "Tomorrow Capital Invests In Kidney Start Up Nephrored Renal Care",
-  },
-  {
-    img: news18,
-    text: "News18 covers Nephrored Renal Care dialysis advancement",
+
+    {
+    img: img14,
+    text: "BHARAT HOSPITAL Shardarshahar",
   },
 ];
+
 
 const servicesData = [
   {
@@ -616,35 +533,34 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== Section 2 Stats ===== */}
+   {/* ===== Section 2 Stats ===== */}
 <section className="stats-section py-5" ref={sectionRef}>
   <div className="container">
     <div className="stats-box mx-auto p-5">
-      <div className="row text-center justify-content-between align-items-center">
-
+      <div className="row justify-content-center align-items-center text-center g-5">
 
         {/* 1️⃣ Operational Centres */}
-        <div className="col-md-2 mb-4 mb-md-0">
+        <div className="col-6 col-md-3">
           <h2 className="stat-number count" data-target="25">0</h2>
           <p className="stat-title m-0">Operational Centres</p>
         </div>
 
         {/* 2️⃣ Satisfied Patients */}
-        <div className="col-md-2 mb-4 mb-md-0">
+        <div className="col-6 col-md-3">
           <h2 className="stat-number count" data-target="13256">0</h2>
           <p className="stat-title m-0">Satisfied Patients</p>
         </div>
 
         {/* 3️⃣ Sessions Completed */}
-        <div className="col-md-3 mb-4 mb-md-0">
+        <div className="col-6 col-md-3">
           <h2 className="stat-number count" data-target="260565">0</h2>
-          <p className="stat-title m-0 ms-5">Sessions Completed (Till Nov 2025)</p>
+          <p className="stat-title m-0">Sessions Completed (Till Nov 2025)</p>
         </div>
 
         {/* 4️⃣ Active Patients */}
-        <div className="col-md-3">
+        <div className="col-6 col-md-3">
           <h2 className="stat-number count" data-target="3567">0</h2>
-          <p className="stat-title m-0 ms-5">Active Patients</p>
+          <p className="stat-title m-0">Active Patients</p>
         </div>
 
       </div>
@@ -751,7 +667,7 @@ const Home = () => {
       <section className="news-wrapper py-5">
         <div className="container">
           <h2 className="news-title text-start mb-5">
-            Nephrored Renal Care In News
+            Some Of Our Centers
           </h2>
 
           <div
