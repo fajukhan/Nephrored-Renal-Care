@@ -178,6 +178,23 @@ const Setup = () => {
     "INPATIENT REVENUES",
   ];
 
+
+  useEffect(() => {
+  const hash = window.location.hash;
+  if (hash === "#contact") {
+    const section = document.getElementById("contactFormSection");
+    if (section) {
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: "smooth" });
+      }, 200); 
+    }
+  }
+}, []);
+
+
+
+
+
   return (
 
     <div>
@@ -313,7 +330,7 @@ const Setup = () => {
 
 
  {/* SECTION-4 : CONTACT FORM */}
- <section className="contact-section py-5">
+ <section id="contactFormSection" className="contact-section py-5">
       <div className="container">
         <h2 className="form-heading mb-4" data-aos="fade-right">
           Reach Out To Us

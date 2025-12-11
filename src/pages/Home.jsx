@@ -41,7 +41,7 @@ import brand1 from "../assets/rghs.png";
 import brand2 from "../assets/echs.jpg";
 import brand3 from "../assets/aayushman.jpg";
 import First from "../assets/first.jpeg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const faqData = [
   { q: "डायलिसिस क्या है?", a: "डायलिसिस एक प्रक्रिया है जिसमें मशीन खून से अपशिष्ट पदार्थ और अतिरिक्त पानी को निकालती है जब किडनी इसे स्वयं नहीं कर पाती।" },
 
@@ -526,9 +526,9 @@ const Home = () => {
             className="cs_hero_btn_wrap mt-4 fade-text"
             key={`btn-${activeIndex}`}
           >
-            <button className="btn btn-outline-light btn-lg cs_hero_btn">
+            <Link  to="/setup#contact" className="btn btn-outline-light btn-lg cs_hero_btn">
               {slides[activeIndex].button}
-            </button>
+            </Link>
           </div>
         </div>
       </section>
